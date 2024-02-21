@@ -1,0 +1,26 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: white;
+  }
+
+  /* the bug */
+/* .font-calc {
+    font-family: 'seven-segment', sans-serif;
+  } */
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #D1D1D1;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
