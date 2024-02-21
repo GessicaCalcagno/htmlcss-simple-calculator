@@ -13,14 +13,16 @@
     font-family: 'seven-segment', sans-serif;
   } */
 
+ 
   .container {
-    width: 70%;
+     /* width: 70%; */
     margin: 0 auto;
     background-color: #D1D1D1;
-    width: 150px;
-    height: 250px;
+    width: 130px;
+    height: 170px;
     margin-top: 20px;
     border-radius: 5px;
+    box-sizing: border-box;
   }
 
   .result{
@@ -37,6 +39,7 @@
     width: 100%;
   }
   .wrapper{
+    box-sizing: border-box;
     display: flex;
     width:100% ;
   }
@@ -45,22 +48,53 @@
   }
   .operation{
     width: 20%;
-    flex-direction: column;  
   }
-  .numbers, .operations{
+  /* flex-direction: column;  non ha funzionato */
+  .numbers, .operation{
     flex-wrap: wrap;
     display: flex;
+     
+  }
+  .numbers{
+    padding: 3px;
+  }
+  
+  .operation{
+    padding: 3px 0 3px 0;
   }
   /* da sistemare */
   .bt{
-    width: calc(100%/3);    
+    width: calc(80%/3);
+    margin-bottom: 4px;
+    margin-right: 6.5px;
+    border-color:#BBBBBB;
+    background-color: #BBBBBB;
+    
+    /* margin: 2px;     */
   }
   
-  .bt, .zero{
-    flex-grow: 2;
+  .zero{
+    flex-grow: 1.4;
   }
   
   .op{
-    height: 20px;
+    height: 15px;
     width: 20px;
+    font-size: 8px;
+    
   }
+.orange{
+  background-color:#FFB13F;
+  border-radius: 2px;
+  color: white;
+  border-color:#FFB13F;
+}
+
+.blue{
+  background-color: #92B7BE;
+  border-radius: 2px;
+  border-color:#92B7BE ;
+  color: white;
+ }
+  
+  /* background-image: linear-gradient(top right, #FFFFFF 0%, #CCCCCC 100%); */
