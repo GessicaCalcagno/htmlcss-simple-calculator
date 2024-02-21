@@ -19,8 +19,48 @@
     background-color: #D1D1D1;
     width: 150px;
     height: 250px;
-    display: flex;
-    justify-content: center;
     margin-top: 20px;
     border-radius: 5px;
+  }
+
+  .result{
+    background-color: black;
+    display: block;
+    font-size: 12px;
+    color: limegreen;
+    font-family: 'seven segment';
+    text-align: right;
+    padding: 5px 0;
+}
+
+  img {
+    width: 100%;
+  }
+  .wrapper{
+    display: flex;
+    width:100% ;
+  }
+  .numbers {
+    width: 80%;
+  }
+  .operation{
+    width: 20%;
+    flex-direction: column;  
+  }
+  .numbers, .operations{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  /* da sistemare */
+  .bt{
+    width: calc(100%/3);    
+  }
+  
+  .bt, .zero{
+    flex-grow: 2;
+  }
+  
+  .op{
+    height: 20px;
+    width: 20px;
   }
