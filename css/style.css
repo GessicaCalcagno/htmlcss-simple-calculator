@@ -30,6 +30,7 @@
   /* LOGO */
    img {
     width: 100%;
+    text-align: center;
   }
 
 /* BLACK SCREEN CON I RISULTATI DELLA CALCOLATRICE */
@@ -40,7 +41,7 @@
     color: limegreen;
     font-family: 'seven segment';
     text-align: right;
-    padding: 5px 0;
+    padding: 5px 3px;
 }
 
  /* PULSANTI PER CALCOLARE */
@@ -83,6 +84,13 @@
     border-radius: 2px;
   }
   
+  button:hover {
+    border-bottom: 1px solid #eeee;
+    border-left: 1px solid #eeee;
+    border-top: 2px solid #898989;
+    border-right: 2px solid #898989;
+  }
+
   /* NUMERO ZERO */
   .zero{
     flex-grow: 1.4;
